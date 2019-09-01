@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+*{
+  height:100%;
+  margin: 0 auto;
+  padding:0;
+  font-family: 'Oswald', sans-serif;
+}
+
+#home{
+  margin-top: -24px;
+  background:#EAFF70;  
+}
+
+#skills{
+  margin-left: 40px;
+  background:#373744;
+}
+.title{
+  padding: 50px;
+  color: aqua;
+}
+h3{
+  height: auto;
+  width: auto;
+}
+p{
+  height: auto;
+  width: auto;
+}
+
+#contact{  
+  
+  background:#FFFFFF;
+}
+
+#myChart{
+  background-color: aqua;
+  height: 18%;
+}
+
+.menu ul li {
+  display: inline;
+  padding: 25px;
+  top: 45%; 
+  position: relative; 
+  margin-left:-20px;  
+  
+}
+a{
+   text-decoration: none;
+   color: #EAFF70;
+   
+   
+}
+a:hover{
+   color: #E9EFB5;
+}
+.menu{
+  font-size: 20px;
+  position: fixed; 
+  height: 100%;
+  width: 50px;
+  top: 0; 
+  left: 0; 
+  background: #41414b;
+}
+
+.skills-icon{
+  font-size:50px;
+}
+
+.img{
+  width: auto;
+  height: auto;
+}
