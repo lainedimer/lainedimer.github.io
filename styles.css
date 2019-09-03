@@ -1,9 +1,11 @@
 
 *{
+  height: 100%;
   font-family: 'Montserrat', sans-serif;
 }
 
 body{
+  
   background-color: rgb(228, 228, 228);
 }
 
@@ -12,11 +14,12 @@ a{
   font-size: 18px;
 }
 
-a:hover{
+.nav-link:hover{
   color: black;
-  text-decoration-color: rgb(189, 14, 72) !important;
-  text-decoration-line: underline !important;
-  text-decoration-style: 18px !important;
+  text-decoration: underline !important;
+  text-decoration-style: solid;
+  text-decoration-color: rgb(255, 217, 0) !important;  
+  
 }
 
 .laine-dimer{
@@ -28,4 +31,101 @@ a:hover{
 .laine-dimer h1{
   font-size: 86px !important;
   font-weight: bold;
+  
+}
+
+.icons{
+  top:58%;
+  left:20%;
+  position: absolute;
+  
+}
+
+.icon{
+  color: rgb(44, 44, 44);
+  font-size: 24px;
+  margin-right: 5px; 
+}
+
+h1{
+  color: rgb(44, 44, 44);
+  height: auto;
+  width: auto;
+}
+
+p{
+  height: auto;
+  width: auto;
+}
+
+#about-me{
+  text-align: center;
+  padding: 10%;
+}
+h2{
+  font-weight: bold;
+  height: auto;
+  width: auto;
+  font-size:52px;
+}
+
+#about-me h2{  
+  color: rgb(44, 44, 44);
+  border-style: none none solid none;
+  border-color:  rgb(255, 217, 0) ;  
+  
+}
+
+#about-me p{
+  margin-top:5%;
+}
+
+.skills{
+  padding: 5%;
+}
+
+.interests{
+  padding: 5%;
+  background-color:  rgb(44, 44, 44);
+}
+
+.interests h2{
+  color: rgb(228, 228, 228);
+}
+
+#experience{
+  padding: 5%;
+  background-color: rgb(44, 44, 44);
+}
+
+.exp{
+  top:30%;
+
+}
+
+#experience h2{
+  padding: 1%;
+  text-align: center;
+  color: rgb(228, 228, 228);
+  border-style: none none solid none;
+  border-color:  rgb(255, 217, 0) ;  
+}
+
+h4{
+  height: auto;
+  width: auto;
+  color: rgb(228, 228, 228);
+}
+
+h5{
+  font-weight: bold;  
+  height: auto;
+  width: auto;
+  font-size: 18px;
+  color:  rgb(255, 217, 0) ;  
+}
+
+#experience p{
+  margin-top: 10%;
+  color: rgb(228, 228, 228);
 }
