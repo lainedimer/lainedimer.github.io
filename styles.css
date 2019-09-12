@@ -1,131 +1,153 @@
-
 *{
   height: 100%;
-  font-family: 'Montserrat', sans-serif;
 }
 
-body{
-  
-  background-color: rgb(228, 228, 228);
+.container-fluid{
+  padding: 0;
+}
+
+#home{
+  background-attachment: fixed;
+  background-size: 100%;
+  background-image: url(fundo.jpg);
+}
+
+.nav-item{
+  margin-right: 5%;
 }
 
 a{
-  color: rgb(44, 44, 44);
-  font-size: 18px;
+  color:rgb(228, 228, 228);
+  font-size: 22px;;
 }
 
 .nav-link:hover{
-  color: black;
-  text-decoration: underline !important;
-  text-decoration-style: solid;
-  text-decoration-color: rgb(255, 217, 0) !important;  
-  
-}
-
-.laine-dimer{
-  top:30%;
-  left: 20%;
-  position: absolute;
+  color:rgb(228, 228, 228);
 }
 
 .laine-dimer h1{
-  font-size: 86px !important;
-  font-weight: bold;
-  
-}
-
-.icons{
-  top:58%;
-  left:20%;
+  top:50%;
+  left:18%;
   position: absolute;
-  
+  color:rgb(228, 228, 228);
 }
 
-.icon{
-  color: rgb(44, 44, 44);
-  font-size: 24px;
-  margin-right: 5px; 
+.laine-dimer h2{
+  top:70%; 
+  left:18%; 
+  position: absolute;  
+  color:rgb(228, 228, 228);
 }
 
 h1{
-  color: rgb(44, 44, 44);
-  height: auto;
-  width: auto;
+  font-size: 96px !important;
 }
 
-p{
-  height: auto;
-  width: auto;
+h1, a{
+  font-family: 'Oswald', sans-serif;
 }
 
-#about-me{
+h2, p{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:36px !important;
+  color: #333333;
+}
+
+#about-me h1{
+  height: auto;
   text-align: center;
-  padding: 10%;
-}
-h2{
-  font-weight: bold;
-  height: auto;
-  width: auto;
-  font-size:52px;
+  color: #999999;  
 }
 
-#about-me h2{  
-  color: rgb(44, 44, 44);
-  border-style: none none solid none;
-  border-color:  rgb(255, 217, 0) ;  
-  
+.box-left{ /*Mudar as dimenssoes*/
+  left:20%;
+  position: absolute;
+  width: 40%;
+  height: 50%;
+  margin-top: 5%;
 }
 
-#about-me p{
-  margin-top:5%;
+.box-right{ /*Mudar as dimenssoes*/
+  left:60%;
+  position: absolute;
+  margin-top: 5%;
+  width: 50%;
+  height: 50%;
 }
 
-.skills{
-  padding: 5%;
+.box-about p{
+  text-align: left;
 }
 
-.interests{
-  padding: 5%;
-  background-color:  rgb(44, 44, 44);
+.img-perfil{
+  border-radius: 50%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE */
 }
 
-.interests h2{
-  color: rgb(228, 228, 228);
-}
-
-#experience{
-  padding: 5%;
-  background-color: rgb(44, 44, 44);
-}
-
-.exp{
-  top:30%;
-
-}
-
-#experience h2{
-  padding: 1%;
+.skills-content{
   text-align: center;
-  color: rgb(228, 228, 228);
-  border-style: none none solid none;
-  border-color:  rgb(255, 217, 0) ;  
 }
 
-h4{
+.skills-content h1{
+  color: #999999;
+}
+
+#skills{
+  margin-top: 28%;
+}
+
+#interests{
+  opacity: 0;
+  margin-top: -49%;  
+}
+
+.skills-content h1, p{
   height: auto;
-  width: auto;
-  color: rgb(228, 228, 228);
 }
 
-h5{
-  font-weight: bold;  
+.line-vertical{
+  margin-top:3%;
+  height: 590px;
+  border-left: 4px solid;
+  color: #CCCCCC;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.div-left, .div-rigth{
+  margin-left: 0;
+  margin-right: 0;  
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+.div-left{
+  left:32%;
+}
+.div-rigth{
+  left: 28%;
+}
+.div-left p{
+  text-align: left;
+  width: auto;
+}
+.div-rigth p{
+  text-align: right;
+}
+
+#experience h1{
   height: auto;
-  width: auto;
-  font-size: 18px;
-  color:  rgb(255, 217, 0) ;  
+  text-align: center;
 }
 
+h4,h5{
+  height: auto;
+}
 #experience p{
-  margin-top: 10%;
+  margin-top: 5%;
   color: rgb(228, 228, 228);
 }
