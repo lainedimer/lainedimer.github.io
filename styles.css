@@ -49,7 +49,7 @@ h1, a{
 
 h2, p{
   font-family: 'Roboto Condensed', sans-serif;
-  font-size:36px !important;
+  font-size:36px;
   color: #333333;
 }
 
@@ -71,7 +71,7 @@ h2, p{
   left:60%;
   position: absolute;
   margin-top: 5%;
-  width: 50%;
+
   height: 50%;
 }
 
@@ -90,7 +90,7 @@ h2, p{
   text-align: center;
 }
 
-.skills-content h1{
+.skills-content, .experience-content, h1{
   color: #999999;
 }
 
@@ -103,6 +103,13 @@ h2, p{
   margin-top: -49%;  
 }
 
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+
 .skills-content h1, p{
   height: auto;
 }
@@ -113,18 +120,11 @@ h2, p{
   border-left: 4px solid;
   color: #CCCCCC;
 }
-.row {
-  margin-left: 0;
-  margin-right: 0;
-}
 
 .div-left, .div-rigth{
-  margin-left: 0;
-  margin-right: 0;  
   position: absolute;
-  width: 50%;
-  height: 50%;
 }
+
 .div-left{
   left:32%;
 }
@@ -139,15 +139,74 @@ h2, p{
   text-align: right;
 }
 
+h4,h5{
+  font-size: 36px;
+  height: auto;
+  color: #333333;
+}
+
 #experience h1{
   height: auto;
   text-align: center;
 }
 
-h4,h5{
-  height: auto;
-}
 #experience p{
   margin-top: 5%;
-  color: rgb(228, 228, 228);
+  color:#333333;
+  margin: 0;
+  font-size: 24px;
+}
+
+.skills, .interests{
+  padding: 0;
+}
+
+.oblique{
+  font-style: oblique;
+}
+
+.box-top, .box-bottom{
+  width: 80%;
+  height: 30%;
+}
+
+.box-center{
+  top: 50%;
+  left: 33%;
+}
+.box-btn{
+  top: 50%;
+  left: 20%;
+}
+.btn-style{
+  border: none;  
+  position: absolute;
+  width: 227px;
+  height: 80px;
+  top: 10%;
+  background: #999999;
+  border-radius: 20px;
+  font-family: Oswald;
+  font-size: 36px;
+  line-height: 53px;
+  color: #FFFFFF;
+}
+
+#contact{
+  background: #333333;
+}
+
+#contact h1{
+  color: #FFFFFF;
+  height: auto;
+}
+
+.teste{
+  left:20%;
+  top: 30%;
+}
+
+.oi{
+  height: auto;
+  top:50%;
 }

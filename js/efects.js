@@ -24,33 +24,31 @@ function parallax(){
 	var about = document.getElementById('about-me');
 	var experience = document.getElementById('experience');	
 	skills.style.top = -(window.pageYOffset/4) + 'px';
-	interests.style.top = (window.pageYOffset/2) + 'px';	
+	interests.style.top = (window.pageYOffset/2) + 'px';
 	
 	if (this.scrollY>lastScrollTop){
-		console.log("valor do:" +this.lastScrollTop);
-		console.log("ScrollY:" +this.scrollY);
-		console.log("desceu");		
 		skills.style.opacity = i;
 		interests.style.opacity = i;
+
 		if(this.scrollY===0){
 			i=0;
-		}else if(this.scrollY>experience.offsetTop || this.scrollY===experience.offsetTop ){
 			skills.style.opacity = i;		
 			interests.style.opacity = i;
+		}else if(this.scrollY>experience.offsetTop || this.scrollY===experience.offsetTop ){
 			i= 0;
-		}else if(this.scrollY>about.offsetTop){
-			skills.style.opacity = i;
-			interests.style.opacity = i;
-  			i += 0.01;
+			skills.style.opacity = i;		
+			interests.style.opacity = i;			
 		}else if (this.scrollY===skillsInte.offsetTop){
 			i=1;
 			skills.style.opacity = i;		
 			interests.style.opacity = i;
-		}else{
-			//i-=0.01;
+		}else if(this.scrollY>about.offsetTop){
+			i += 0.01;
+			skills.style.opacity = i;
+			interests.style.opacity = i;
+		}else{			
 			console.log("Nao esperado");
 		}
-		
 
 	}else{
 		i += 0.02;
@@ -60,6 +58,11 @@ function parallax(){
 			i=0;
 			skills.style.opacity = i;
 			interests.style.opacity = i;
+		}else if(this.scrollY===experience.offsetTop){
+			i= 0;
+			skills.style.opacity = i;		
+			interests.style.opacity = i;
+		
 		}else{
 			console.log("Nao esperado");
 		}
@@ -70,7 +73,7 @@ function parallax(){
 
 }
 	
-var i=0;
+var i =0;
 var lastScrollTop = 0;
 window.addEventListener("scroll", parallax, false);
 
