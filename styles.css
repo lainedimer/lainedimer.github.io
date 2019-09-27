@@ -4,14 +4,12 @@
 
 .container-fluid{
   padding: 0;
-
 }
 
 #home{
   background-attachment: fixed;
-  /*background-size: 100%;*/
   background-repeat: no-repeat;
-  background-image: url(fundo.png);
+  background-image: url(img/fundo.png);
 }
 
 .menu{
@@ -21,9 +19,9 @@
 .navbar-nav{
   width: 100%;
 }
+
 .nav-item{
   margin-right: 5%;
-
 }
 
 a{
@@ -78,14 +76,9 @@ h2, p{
   margin-right: 100%;
 }
 
-.box-lf{
-  padding:5%  5%  5% 5%;
-}
-
 .box-about p{
   text-align: left;
 }
-
 
 .img-perfil{
   border-radius: 50%;
@@ -94,11 +87,10 @@ h2, p{
   filter: gray; /* IE */
   max-width: 100%;
   height: auto;
-  
 }
 
 #skills-interests{
-  height: auto;
+  height: auto; 
 }
 
 .skills-content{
@@ -107,13 +99,18 @@ h2, p{
 
 .skills-content, .experience-content, h1{
   color: #999999;
+  text-align: center;
 }
 
 .skills-content p{
-  color: #333333;
+  color: #333333; 
 }
 
 @media screen and (min-width: 800px) {
+  
+  .box-lf{
+    padding: 6%  6%  6% 6%;
+  }
   #skills{
     margin-top: 28%;
   }
@@ -144,6 +141,7 @@ h2, p{
     line-height: 53px;
     color: #FFFFFF;
   }
+
   .icons{
     left:20%;
     top: 54%;
@@ -152,9 +150,25 @@ h2, p{
     height: auto;
   }
   
+  .box-lf{
+    left:15%;
+  }
+  .box-rg{
+    margin-top:10%
+  }
+
+  .box-icon{
+    padding: 10%;
+    top:4%;
+  }
 
 }
 
+@media screen and (max-width: 500px){
+  .box-lf{
+    padding:15%  15%  15% 15%;
+  }
+}
 .row {
   margin-left: 0;
   margin-right: 0;
@@ -164,27 +178,24 @@ h2, p{
   height: auto;
 }
 
-
 h4,h5{
   font-size: 5.17vh;
   height: auto;
   color: #333333;
 }
+
 #experience{
   height: auto;
 }
 
-#experience h1{
-  
-  text-align: center;
-  
+#experience h1{ 
+  text-align: center; 
 }
 
 #experience p{
   color:#333333;
   margin: 0;
   font-size: 2.6vh;
-
 }
 
 .btn-style{
@@ -203,43 +214,35 @@ h4,h5{
   font-style: oblique;
 }
 
-
 #contact{
   background: #333333;
-  
 }
 
-#contact h1, p{
+#contact h1{
   color: #FFFFFF;
   height: auto;
-  width: auto;
+  text-align: left;
 }
 
-.box-align{
-  left:20%;
-  top: 30%;
-  width: 50%;
-  height: 50%;
+#contact p{
+  color: #FFFFFF;
+  height: auto;
+  text-align: left;
 }
-.box-align h1{
-  margin-bottom:5%;
-}
-
-.box-align p{
-  padding: 0;
-  margin:0;
+.contact-content .row .col-sm-6 p{
+  left:50%;
 }
 
-.icons{
-  height: 16.3934vh;
-}
 .icon{
-  font-size: 16.3934vh;
-  margin-right: 40px; 
+  font-size: 10vh;
 }
 
 .icons a:hover{
   color:#999999;
+}
+
+.col-sm-6{
+  height: auto;
 }
 
 /* Timeline */
