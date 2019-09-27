@@ -1,6 +1,14 @@
 const menuItems = document.querySelectorAll('.menu a[href^="#"]');
 var top = document.querySelector('.scrollTop');
 
+var i =0;
+var lastScrollTop = 0;
+	console.log(window.innerWidth);
+	if(window.innerWidth>800){
+		console.log("entrou no midia");
+		window.addEventListener("scroll", parallax, false);
+	}
+
 menuItems.forEach(item => {
 		item.addEventListener('click', scrolloIdOnClick);
 	})
@@ -72,9 +80,8 @@ function parallax(){
 	lastScrollTop = this.scrollY;
 
 }
-	
-var i =0;
-var lastScrollTop = 0;
-window.addEventListener("scroll", parallax, false);
+
+
+
 
 

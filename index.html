@@ -18,48 +18,58 @@
       
     <div id="home">
       <div class="menu">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">LAÍNE DIMER</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about-me">ABOUT ME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills-interests">SKILLS & INTERESTS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#experience">EXPERIENCE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">CONTACT</a>
-          </li>     
-        </ul>      
+          <nav class="navbar navbar-expand-lg navbar-dark">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about-me">ABOUT ME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills-interests">SKILLS & INTERESTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#experience">EXPERIENCE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
       </div>
-
+    </div>
         <div class="laine-dimer">
           <h1>LAÍNE DIMER</h1>
-          <h2>DATA SCIENTIST - FRONT-END</h2>
         </div>
     </div>
 
     <div id="about-me">
       <h1>ABOUT ME</h1>
-      <div class="box-left">
-        <p>I work since 2015 in the area of systems and technology. I aim to expand my professional </br>
-        experience and knowledge in the technology with a focus on development.</p>
+      <div class="row box-about">
+        
+        <div class="col-sm-6 box-lf">
+              <img class="img-perfil" src="img/img-perfil.JPG" alt="Laíne Dimer"> 
+          </div>
+        <div class="col-sm-6 box-rg">
+            <p>I work since 2015 in the area of systems and technology. I aim to expand my professional </br>
+            experience and knowledge in the technology with a focus on development.</p>
+        </div>
+       
       </div>
-      <div class="box-right">
-        <img class="img-perfil" src="img/laine.jpeg" alt="Laíne Dimer"> 
       </div>
-    </div>
+    
 
     <div id="skills-interests">
       <div class="skills-content">
         <div class="row">
-          <div id="skills" class="col">
-            <h1>SKILLS</h1>
-            <div class="div-left">
+          <div id="skills" class="col-sm-6" >
+              <h1>SKILLS</h1>
               <p>HTML e CSS</p>             
               <p>Javascript</p> 
               <p>SQL</p> 
@@ -67,12 +77,11 @@
               <p>Data Mining</p>
               <p>Tester</p> 
               <p>Support</p> 
-            </div>
           </div>
           <div class="line-vertical"></div>
-          <div id="interests" class="col">
-            <h1>INTERESTS</h1>
-            <div class="div-rigth">
+          <div id="interests" class="col-sm-6">
+
+              <h1>INTERESTS</h1>
               <p>Python</p> 
               <p>Data Science</p> 
               <p>Business Intelligence</p> 
@@ -80,49 +89,61 @@
               <p>AI</p> 
               <p>Technology</p> 
               <p>Front-end</p> 
-            </div>
+            
           </div>
         </div>
       </div>
     </div>
 
     <div id="experience">
-      <div class="experience-content">
-        <h1 class="animated fadeInDown delay-2s">EXPERIENCE</h1>        
-        <div class="box">
-        <div class="row box-top">       
-          <div class="col box-center">
-            <h4>Test Analyst / Support</h4>
-            <p>Aldus Sistemas</p>
-            <p class="oblique">Aug 2015 - Present</p> 
-          </div>
-          <div class="col box-btn">
-            <button class="btn-style">MORE INFO</button>
+
+      <div class="container-fluid mt-5 mb-5">
+          <h1>EXPERIENCE</h1>
+        <div class="row">
+          <div class="col-md-6 offset-md-4">
+            <ul class="timeline">
+              <li>
+                <h4>Test Analyst / Support</h4>
+                <h5>Aldus Sistemas</h5>
+                <a class="float-left">2015-2019 - 4 years 2 months</a></br></br>
+                <p>- Requirements analysis for corrections and module changes of the software.</br>
+                - Monitoring and analysis of new technical standards(NF-e/NFC-e, MDF-e, CT-e e PAF-ECF) for implementation.</br>
+                - Analysis of inconsistencies in the database through sql.</br>
+                - Report generation via sql script.</br>
+                - Performing manual tests (checklist) of the software.</br>
+                - Responsible for releasing version and monitoring errors and crashes.</br>
+                - Customer service via phone, email and Skype.</br>
+                - Software module training.</br>
+              </p>
+              </li>
+              <li>
+                  <h4>Style assistant</h4>
+                  <h5>Dossiê</h5>
+                  <a class="float-left">2014-2015 - 1 year 1 month</a></br></br>
+                  <p>- Attendance to representative.</br>
+                  - Inventory control of fabrics and supplies.</br>
+                  - Creation and control of datasheets.</br>
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="row box-bottom">
-          <div class="col box-center">
-            <h4>Style assistant</h4>
-            <p>Dossiê</p>
-            <p class="oblique">Jul 2014 - Aug 2015</p> 
-          </div>
-          <div class="col box-btn">
-            <button class="btn-style">MORE INFO</button>
-          </div>
-        </div>      
-      </div>      
       </div>
     </div>
+    
     <div id="contact">
       <div class="contact-content">
         <div class="row">
-          <div class="col teste">
+          <div class="col-sm-6 box-align">
             <h1>CONTACT</h1>
-            <p >laainediimer@gmail.com</p>
+            <p>laainediimer@gmail.com</p>
             <p>48 996460892</p>
           </div>
-          <div class="col">
-            
+          <div class="col-sm-6">
+              <div class="icons">
+                  <a href="https://www.linkedin.com/in/laine-dimer/" target="_blank"><span class="fab fa-linkedin-in icon"></span></a>
+                  <a href="https://github.com/lainedimer"  target="_blank"><span class="fab fa-github icon"></span></a>
+              </div>        
           </div>
         </div>
       </div>
