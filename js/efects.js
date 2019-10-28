@@ -3,9 +3,7 @@ var top = document.querySelector('.scrollTop');
 
 var i =0;
 var lastScrollTop = 0;
-	console.log(window.innerWidth);
 	if(window.innerWidth>800){
-		console.log("entrou no midia");
 		window.addEventListener("scroll", parallax, false);
 	}
 
@@ -54,8 +52,6 @@ function parallax(){
 			i += 0.01;
 			skills.style.opacity = i;
 			interests.style.opacity = i;
-		}else{			
-			console.log("Nao esperado");
 		}
 
 	}else{
@@ -71,10 +67,7 @@ function parallax(){
 			skills.style.opacity = i;		
 			interests.style.opacity = i;
 		
-		}else{
-			console.log("Nao esperado");
 		}
-
 	}
 
 	lastScrollTop = this.scrollY;
